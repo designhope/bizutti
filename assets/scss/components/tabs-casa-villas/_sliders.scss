@@ -1,0 +1,60 @@
+.slider-casa-vila{
+  &-slider{
+    &-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 700px;
+      background-size: cover ;
+      background-repeat: no-repeat;
+      background-position: center center;
+      &::before {
+        content: '';
+        background: rgba(0,0,0,0.45);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 7;
+      }
+      &-content{
+        position: relative;
+        z-index: 8;
+        color : #fff;
+        figure{
+          img{
+            margin: auto;
+            @extend .img-responsive;
+          }
+        }
+        h2{
+          text-align: center;
+
+        }
+        p{
+          padding: 40px 0;
+          text-align: left;
+          font-size: 24px;
+          max-width: 675px;
+          margin: auto;
+
+        }
+        &-cta{
+          background-color: none;
+          color :#deb243;
+          text-align: center;
+          display: block;
+          font-size: 24px;
+          font-weight: 500;
+          text-decoration: none;
+          &:hover {
+            color :#deb243;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+  }
+}
+

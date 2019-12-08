@@ -1,0 +1,91 @@
+.header {
+    background-color: #f7f7f7;
+    max-height: 130px;
+    &-menu{
+        vertical-align: middle ;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: stretch;
+        ul{
+            li {
+                display: inline-block;
+                position: relative;
+                margin: 0 10px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                a{
+                    color : #000;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    text-decoration: none;
+                    font-family: $fontDefault;
+                    &:hover {
+                        color: #deb243;
+                    }
+                }
+                ul{
+                    visibility: hidden;
+                    background: #f7f7f7;
+                    width:  250px;
+                    opacity: 0;
+                    position: absolute;
+                    transition: all 0.5;
+                    padding: 10px 0 ;
+                    left: -50%;
+                    border-radius: 4px;
+                    border : 1px solid #f3f1f1;
+                    z-index: 99;
+                    li {
+                        margin: 0;
+                        display: block;
+                        padding: 10px 7px;
+                        width: 100%;
+                        left: 0;
+                        
+                        a {
+                            font-family: $quicksand;
+                        }
+                        &:hover{
+                            background: #d8bc83;
+                            >a{
+                                color : #fff;
+                            }
+                        }
+                    }   
+                }
+                &:hover {
+                    ul {
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.5;
+                    }
+                }
+                &.header-menu-sub{
+                    margin-right: 15px;
+                    &:after {
+                        font-family: 'FontAwesome';
+                        font-weight: 900; 
+                        content: "\f0da";
+                        position: absolute;
+                        right: -15px;
+                    }
+                    &:hover {
+                        &:after {
+                            font-family: 'FontAwesome';
+                            font-weight: 900; 
+                            content: "\f0d7";
+                           
+                            color : #deb243;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

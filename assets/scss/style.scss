@@ -1,0 +1,41 @@
+/*!
+Theme Name: MZiQ - Biotoscana Institucional
+Author: MZiQ
+Author URI: http://mzi  q.com/
+Description: MZiQ CMS Theme for Biotoscana Site
+Version: 1.0
+License: GNU General Public License v2 or later
+
+General description...
+*/
+
+
+//bootsrap
+@import 'bootstrap/_bootstrap';
+//animate
+@import 'animate/_animate';
+
+//font
+@import'fonts/_font';
+
+
+
+//variables 
+@import 'variables/_variables';
+@import 'defaults';
+//mixins
+@import 'mixins/mixins';
+
+//components
+@import './components/header/header';
+@import './components/hero/hero';
+@import'./components/tabs-casa-villas/tab-casas-vilas';
+@import'./components/tabs-casa-villas/sliders';
+@import'./components//section-solucoes-home/section_solucoes';
+
+@import'./components/map-home/map';
+
+//slick
+@import './node_modules/slick-carousel/slick/slick.scss';
+@import './node_modules/slick-carousel/slick/slick-theme.scss';
+

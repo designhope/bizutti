@@ -1,0 +1,25 @@
+* {
+  font-family: $fontDefault;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html.no-js {
+  margin-top: 0!important;
+}
+.logged-in {
+  padding-top: 32px;
+}
+@media screen and (max-width: 782px) {
+  .logged-in {
+      padding-top: 46px;
+  }
+}
+
+*:before,
+*:after {
+  font: 400 20px/1 dashicons;
+}

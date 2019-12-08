@@ -1,0 +1,16 @@
+//title 
+@mixin title {
+    font-size: 28px;
+    color: #007377;
+    font-weight: 300;
+    clear: left;
+}
+
+@mixin paragraph {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 15px 0;
+    color: #58595b;
+    font-weight: 300;
+    
+}
