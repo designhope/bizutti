@@ -1,9 +1,10 @@
 .solucoes-home {
     background: #fff;
+    display: flow-root;
     &-title{
-        font-family: $fontbanner ;
+        font-family: $fontDefault ;
         font-size: 60px;
-        color: #deb243;
+        color: #210c09;
         font-weight: normal;
         text-align: center;
         padding: 40px 0;
@@ -17,7 +18,7 @@
             text-decoration: none;
             color : #000;
             &:hover {
-                text-decoration: none;;
+                text-decoration: none;
             }
         }
 

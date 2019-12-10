@@ -1,6 +1,6 @@
 <section class="solucoes-home">
     <div class="container">
-        <h2 class="solucoes-home-title">"Uma solução completa, <br /> excelência em cada detalhe"</h2>
+        <h2 class="solucoes-home-title">Uma solução completa, <br /> excelência em cada detalhe</h2>
     </div>
     <div class="container-fluid">
         <div class="row">

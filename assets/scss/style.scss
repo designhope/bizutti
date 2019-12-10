@@ -28,12 +28,17 @@ General description...
 
 //components
 @import './components/header/header';
+
+//home
 @import './components/hero/hero';
 @import'./components/tabs-casa-villas/tab-casas-vilas';
 @import'./components/tabs-casa-villas/sliders';
 @import'./components//section-solucoes-home/section_solucoes';
-
+@import './components/section-bizutti-casa/section-bizutti-casa';
+@import './components/section-eventos-home/section-eventos-home';
 @import'./components/map-home/map';
+//home
+@import './components/section-bizutti-casa/section-bizutti-casa';
 
 //slick
 @import './node_modules/slick-carousel/slick/slick.scss';

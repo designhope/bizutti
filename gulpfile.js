@@ -40,7 +40,7 @@ gulp.task('sass', getTask('project-sass'));
 gulp.task('images', function() {
     gulp.src('./assets/images/**')
         .pipe(imagemin())
-        .pipe(gulp.dest('./assets/img  loading="lazy"'))
+        .pipe(gulp.dest('./assets/img/'))
 });
 
 gulp.task('minify-js', function () {
