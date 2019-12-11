@@ -1,0 +1,11 @@
+.section-localizacao {
+    background: #f5f5f5;
+    padding: 40px;
+    &-title {
+      font-family: $fontDefault;
+      font-size: 60px;
+      color: #210c09;
+      font-weight: normal;
+      text-align: center;
+    }
+}

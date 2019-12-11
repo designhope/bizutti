@@ -13,6 +13,9 @@ html.no-js {
 .logged-in {
   padding-top: 32px;
 }
+body{
+  overflow-x: hidden;
+}
 @media screen and (max-width: 782px) {
   .logged-in {
       padding-top: 46px;

@@ -28,6 +28,7 @@ General description...
 
 //components
 @import './components/header/header';
+@import './components/footer/footer';
 
 //home
 @import './components/hero/hero';
@@ -36,9 +37,15 @@ General description...
 @import'./components//section-solucoes-home/section_solucoes';
 @import './components/section-bizutti-casa/section-bizutti-casa';
 @import './components/section-eventos-home/section-eventos-home';
+@import './components/section-contact-form/section-contact-form';
 @import'./components/map-home/map';
-//home
+@import './components/section-localizacao/section-localizacao';
 @import './components/section-bizutti-casa/section-bizutti-casa';
+//pages
+
+@import'./components/banner-pages/banner-pages';
+@import'./components/article-content/article-content';
+@import'./components/slider-pages/slider-pages';
 
 //slick
 @import './node_modules/slick-carousel/slick/slick.scss';

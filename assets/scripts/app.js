@@ -12,6 +12,18 @@ $(function() {
       nextArrow: $('.slider-right')
      });
    }
+   var sliderPages =  function() {
+    $('.slider-pages-slidejs').slick({
+     slidesToShow: 2,
+     slidesToScroll: 1,
+     dots: false,
+     centerMode: true,
+     focusOnSelect: false,
+     infinite : true,
+     prevArrow:$('.slider-left'),
+     nextArrow: $('.slider-right')
+    });
+  }
     //maps
     function map() {
       (function() {
@@ -50,8 +62,9 @@ $(function() {
               places[i].location[0],
               places[i].location[1]
             ),
-            map: map
-            // icon: "https://www.clipartwiki.com/clipimg/detail/161-1612281_earth-location-map-world-navigation-pin-marker-comments.png"
+            map: map,
+            icon: "assets/img/icon_pin.png",
+  
           });
     
           content =
@@ -80,8 +93,9 @@ $(function() {
       })()
     }
   var init = function() {
-    document.getElementById("defaultOpen").click();
+
     sliderServicos();
+    sliderPages();
     map();
   };
 

@@ -1,0 +1,86 @@
+.footer {
+    padding: 40px;
+    background-color: #d8bc83;
+    &-widgets{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        color  :  rgb(69, 65, 62);
+        font-size: 16px;
+        .icon {
+            display: inline-block;
+        }
+        .fa-envelope:before {
+            content: "\f0e0";
+            font-family: 'FontAwesome';
+            font-weight: 900;
+            
+        }
+        .fa-phone-alt:before {
+            content: "\f098";
+            font-family: 'FontAwesome';
+            font-weight: 900;
+            
+        }
+        .fa-map-marker::before {
+            content: "\f041";
+            font-family: 'FontAwesome';
+            font-weight: 900;
+            
+        }
+        .email-content{
+            line-height: 2;
+            border-bottom: 4px solid #a69065;
+        }
+
+        
+       
+    }
+    &-social {
+        @extend .pull-right;
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        a{
+            color  :  rgb(69, 65, 62);
+            text-decoration: none;
+        }
+        .fa-facebook-f:before {
+            content: "\f09a";
+            font-family: 'FontAwesome';
+            font-weight: 900;
+            
+        }
+        .fa-instagram:before {
+            content: "\f16d";
+            font-family: 'FontAwesome';
+            font-weight: 900;
+        }
+        .fa-youtube-play:before {
+            content: "\f16a";
+            font-family: 'FontAwesome';
+            font-weight: 900;
+        }
+        .fa-twitter:before {
+            content: "\f099";
+            font-family: 'FontAwesome';
+            font-weight: 900;
+        }
+        
+        
+    }
+    &-recomdacao{   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $quicksand;
+        text-transform: uppercase;
+        font-weight: 700;
+        div{
+            margin: 10px;
+
+        }
+    }
+}

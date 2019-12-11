@@ -1,5 +1,5 @@
 .solucoes-home {
-    background: #fff;
+    background: #f5f5f5;
     display: flow-root;
     &-title{
         font-family: $fontDefault ;
@@ -23,13 +23,13 @@
         }
 
         &-header{
-            height: 420px;
+            height: 503px;
             position: relative;
             transition: all 0.5s;
             figure {
                 img{
                     @extend .img-responsive;
-                    height: 420px;
+                    height: 503px;
                     object-fit: cover;
                     object-position: top
                 }
@@ -38,9 +38,14 @@
                 text-transform: uppercase;
                 position: absolute;
                 color : #fff;
-                bottom: 30px;   
+                bottom:10px;   
                 padding: 15px 30px;
                 font-size: 32px;
+                p{
+                  font-size: 16px;
+                  font-family: $quicksand;
+                  opacity: 0;
+                }
                 &::after, &::before{
                     opacity: 0;
                 }
@@ -58,12 +63,13 @@
                 transition: all 0.5s;
                 h3{
                     display: block;
-                    transform: translate(50px , -300px);
+                    transform: translate(60px , -400px);
                     transition: all 0.5s;
                     z-index: 9;
                     position: relative;
                     width: 80%;
                     transition: all 0.5s;
+                    bottom: 0;
                     &::before{
                         transition: all 0.5s;
                         content: '';
@@ -88,27 +94,47 @@
                         height: 80px;
                         opacity: 1;
                     }
+                    p{
+                      font-family: $quicksand;
+                      font-size: 16px;
+                      opacity: 1;
+                    }
                 }
                 &:after {
                     background: rgba(0, 0, 0, .8);
                     transition: all 0.5s;
                 }
             }
+          
         }
-        &-content{
-            padding: 25px 30px;
-            font-family: $quicksand;
-            font-size: 24px;
-        }
+        &-link{
+          position: absolute;
+          bottom: 15px !important; 
+          right: 45px !important;
+          color: #deb243 !important;
+          font-size: 16px;
+          font-weight: 500;
+          text-decoration: none;
+          z-index: 99;
+          &:hover {
+            color: #fff;
+            text-decoration: none;
+          }
+        
+      }
     }
     &-controls{
-        margin: 40px 0;
+        margin: 40px auto;
+        width: 280px;
+        display: flex;
+        justify-content: space-around;
         .slider-left{
             &:focus {
                 outline: none;
             }
-            background: #fff;
+            background: transparent;
             padding: 10px;
+        
             &:after{
                 font-family: 'FontAwesome';
                 font-weight: 900; 
@@ -121,7 +147,7 @@
             &:focus {
                 outline: none;
             }
-            background: #fff;
+            background: transparent;
             padding: 10px;
             &:after{
                 font-family: 'FontAwesome';

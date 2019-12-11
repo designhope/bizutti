@@ -17,16 +17,16 @@
             </div>
             <div class="col-md-4">
                 <div class="section-eventos-home-card">
-                <img class="img-responsive" src="assets/img/debutante.jpg" alt="">
+                    <img class="img-responsive" src="assets/img/debutante.jpg" alt="">
                     <div class="section-eventos-home-card-contnet">
-                        <h3>Debutante</h3>
+                        <h3>Festas judaicas</h3>
                         <a href="#">Saiba Mais >> </a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="section-eventos-home-card">
-                <img class="img-responsive" src="assets/img/debutante.jpg" alt="">
+                    <img class="img-responsive" src="assets/img/debutante.jpg" alt="">
                     <div class="section-eventos-home-card-contnet">
                         <h3>Debutante</h3>
                         <a href="#">Saiba Mais >> </a>

@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <div class="header-logo col-md-2">
                 <a href="">
-                    <img  loading="lazy" src="assets/img/logo.svg" alt="Bizutti">
+                    <img src="assets/img/logo.svg" alt="Bizutti">
                 </a>
             </div>
             <div class="col-md-10">
