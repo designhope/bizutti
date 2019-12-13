@@ -15,6 +15,10 @@ General description...
 //animate
 @import 'animate/_animate';
 
+//slick
+@import './node_modules/slick-carousel/slick/slick.scss';
+@import './node_modules/slick-carousel/slick/slick-theme.scss';
+
 //font
 @import'fonts/_font';
 
@@ -46,8 +50,9 @@ General description...
 @import'./components/banner-pages/banner-pages';
 @import'./components/article-content/article-content';
 @import'./components/slider-pages/slider-pages';
+@import'./components/section-video/section-video';
+@import'./components/section_slider/section_slider';
 
-//slick
-@import './node_modules/slick-carousel/slick/slick.scss';
-@import './node_modules/slick-carousel/slick/slick-theme.scss';
+
+
 

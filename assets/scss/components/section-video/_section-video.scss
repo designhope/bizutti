@@ -1,0 +1,26 @@
+.section-video {
+    background: #fff;
+    display: flow-root;
+    padding: 40px 0;
+    &-title{
+        font-family: $fontDefault ;
+        font-size: 60px;
+        color: #210c09;
+        font-weight: normal;
+        text-align: center;
+    }
+    p{
+        font-size: 24px;
+    }
+    iframe , video {
+        margin-top: 40px;
+        width: 100%;;
+    }
+    &.grey {
+        background: #f5f5f5;
+    }
+    &.gold {
+        background : rgb(216, 188, 131);
+    }
+
+}

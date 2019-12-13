@@ -20,13 +20,37 @@
                         <a class="solucoes-home-card-link" href="">Saiba mais >></a>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="solucoes-home-card">
+                        <a href="#">
+                            <div class="solucoes-home-card-header">
+                                <figure>
+                                    <img src="assets/img/chef-julio.jpg" width="100%" height="100%" alt="" loading="lazy">
+                                </figure>
+                                <h3>Gastronomia Chef <br>Julio Perinetto
+                                <p>O nosso Chef Julio Perinetto está presente em cada etapa do processo, assistido por sua equipe altamente capacitada.</p>
+                                </h3>
+                            </div>
+                        </a>
+                        <a class="solucoes-home-card-link" href="">Saiba mais >></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="solucoes-home-card">
+                        <a href="#">
+                            <div class="solucoes-home-card-header">
+                                <figure>
+                                    <img src="assets/img/chef-julio.jpg" width="100%" height="100%" alt="" loading="lazy">
+                                </figure>
+                                <h3>Gastronomia Chef <br>Julio Perinetto
+                                <p>O nosso Chef Julio Perinetto está presente em cada etapa do processo, assistido por sua equipe altamente capacitada.</p>
+                                </h3>
+                            </div>
+                        </a>
+                        <a class="solucoes-home-card-link" href="">Saiba mais >></a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="solucoes-home-controls">
-            <button class="slider-left"> 
-            </button>
-            <button class="slider-right">
-            </button>
         </div>
     </div>
 </section>

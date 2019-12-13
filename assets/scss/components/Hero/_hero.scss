@@ -1,18 +1,22 @@
 .hero {
   height: 803px;
+  @media screen and(max-width: 480px) {
+    height: 448px;
+}
   &-slider{
     position: relative;
     height: 803px;
     &-item {
       position: relative;
-      display: flex;
-      align-items: center;
       height: 803px;
       background-size: cover ;
       background-repeat: no-repeat;
       background-position: center center;
       text-align : center;
       color : #fff;
+      @media screen and(max-width: 480px) {
+        height: 448px;
+    }
       &::before {
         content: '';
         background: rgba(0,0,0,0.45);
@@ -26,6 +30,9 @@
         z-index: 8;
         position: relative;
         font-weight: 500;
+        @media screen and(max-width: 480px) {
+            font-size: 22px;
+        }
       }
       p{
         font-family: $fontbanner;  
@@ -33,6 +40,9 @@
         z-index: 8;
         position: relative;
         margin: 30px 0;
+        @media screen and(max-width: 480px) {
+          font-size: 14px;
+      }
       }
       &-cta{
         z-index: 8;
@@ -46,6 +56,40 @@
         text-transform: uppercase;
         box-shadow: 0px 1px 1px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12), 0px 1px 3px rgba(0,0,0,0.2)
       }
+      &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+  }
+  .slick-dots {
+    position: absolute !important;
+    bottom: 150px !important;
+    left: 0;
+    right: 0;
+    z-index: 999999999 !important;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: auto;
+    @media screen and(max-width: 480px) {
+      bottom: 400px !important;
+  }
+    button{
+      width: 50px;
+      height: 20px;
+      margin: 2% 5%;
+      
+      &::before{
+        content: '';
+        width: 50px;
+        height: 5px;
+        background: #d9b866;
+      }
     }
   }
     &-down {
@@ -56,7 +100,10 @@
       margin: auto;
       position: relative;
       z-index:8;
-      bottom: 70px;
+      bottom: 100px;
+      @media screen and(max-width: 480px) {
+        bottom: 40px;
+    }
         &:before {
           font-family: 'FontAwesome';
           content: "\f107";

@@ -9,6 +9,10 @@
     color: #210c09;
     font-weight: normal;
     text-align: center;
+    @media screen and(max-width: 480px) {
+      font-size: 22px;
+      padding: 40px;
+  }
   }
   &-container {
     position: relative;
@@ -19,6 +23,9 @@
       height: 776px;
       object-fit: cover;
       z-index: 6;
+      @media screen and(max-width: 480px) {
+        height: 516px;
+    }
     }
   }
   &-contnet {
@@ -46,6 +53,11 @@
       object-fit: none;
       height: 300px;
       width: 100%;
+      @media screen and(max-width: 480px) {
+          height: auto;
+          width: 65%;
+          object-fit: unset;
+    }
     }
     &::before {
       content: "";
@@ -56,6 +68,7 @@
       flex-direction: column;
       left: 0;
       z-index: 5;
+  
     }
     &-inner {
       position: relative;
@@ -81,6 +94,11 @@
         opacity: 0;
         z-index: 9;
         transition: all 0.5s;
+        @media screen and(max-width: 480px) {
+          position: relative;
+          height: 0;
+          width: 0;;
+      }
       }
       &::after {
         transition: all 0.5s;
@@ -95,6 +113,12 @@
         z-index: 9;
         opacity: 0;
         transition: all 0.5s;
+        @media screen and(max-width: 480px) {
+          position: relative;
+          height: 0;
+          width: 0;;
+       
+      }
       }
     }
     p {
@@ -103,6 +127,11 @@
       text-align: left;
       max-width: 675px;
       margin-bottom: 80px;
+      @media screen and(max-width: 480px) {
+
+        margin: 15px;
+        font-size: 16px;
+    }
     }
     a {
       color: #deb243;
@@ -113,6 +142,10 @@
       text-decoration: none;
       position: relative;
       z-index: 999;
+      @media screen and(max-width: 480px) {
+      
+        font-size: 16px;
+    }
       &:hover {
         color: #fff;
         text-decoration: none;
