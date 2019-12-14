@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="footer-widgets">
-                <div class="col-md-2">
+                <div class="col-md-2 logo">
                     <a href="">
                         <img src="assets/img/logo.svg" alt="Bizutti">
                     </a>

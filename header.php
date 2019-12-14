@@ -17,8 +17,18 @@
                     <img src="assets/img/logo.svg" alt="Bizutti">
                 </a>
             </div>
+            <div class="col-md-2 pull-right visible-xs">
+                <a href="" class="header-mobile-btn "> 
+
+                </a>
+            </div>
             <div class="col-md-10">
                 <nav class="header-menu">
+                    <div class="header-menu-close visible-xs">
+                        <a href="">
+                            
+                        </a>
+                    </div>
                     <ul>
                         <li><a href="">Grupo bisutti</a></li>
                         <li class="header-menu-sub"><a href="">Grupo bisutti</a>

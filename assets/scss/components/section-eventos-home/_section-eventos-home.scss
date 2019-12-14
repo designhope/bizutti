@@ -7,6 +7,15 @@
     color: #210c09;
     font-weight: normal;
     text-align: center;
+    @media screen and(max-width: 480px) {
+      font-size: 22px;
+      margin-bottom: 40px;
+  }
+  }
+  .col-md-4{
+    @media screen and(max-width: 480px) {
+      padding: 0;
+  }
   }
   &-card {
     position: relative;
@@ -14,6 +23,10 @@
     img {
       height: 500px;
       object-fit: cover;
+      @media screen and(max-width: 480px) {
+        height: 250px;
+        width: 100%;
+    }
     }
     &-contnet {
       display: flex;
@@ -35,9 +48,11 @@
           padding-left: 30px;
           transition: all 0.5s;
           @media screen and(max-width: 480px) {
-            font-size: 22px;
-            padding: 40px;
+            padding: 0 30px;
+            font-size: 40px;
+           
         }
+          
         
           &:hover {
             transition: all 0.5s;
@@ -73,6 +88,11 @@
               height: 80px;
               opacity: 0;
              
+          }
+          @media screen and(max-width: 480px) {
+            &::after , &::before {
+              opacity: 1;
+            }
           }
       }
       a {

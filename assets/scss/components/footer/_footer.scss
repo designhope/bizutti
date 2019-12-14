@@ -8,6 +8,16 @@
         flex-wrap: wrap;
         color  :  rgb(69, 65, 62);
         font-size: 16px;
+        @media screen and(max-width: 480px) {
+            .logo {
+                text-align: center;
+            }
+            div{
+                margin: 10px 0;
+            }
+            display: block;
+            
+        }
         .icon {
             display: inline-block;
         }
@@ -67,6 +77,12 @@
             content: "\f099";
             font-family: 'FontAwesome';
             font-weight: 900;
+        }
+        @media screen and(max-width: 480px) {
+           float : none !important;
+           width: 100%;
+           margin: 20px auto;
+           text-align: center;
         }
         
         

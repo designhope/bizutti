@@ -1,17 +1,65 @@
 .header {
     background-color: #f7f7f7;
     max-height: 130px;
+    position: relative;
+    &-mobile-btn {
+        position: absolute;
+        top: -70px;
+        right: 40px;
+        z-index: 9;
+
+        &:after{
+            position: absolute;
+            font-family: 'FontAwesome';
+            font-weight: 900; 
+            content: "\f0c9";
+            color : #000;
+            font-size: 30px;
+        }
+
+    }
     &-menu{
+        &-close{
+            height: 117px;
+            a {
+                &:after{
+                    position: absolute;
+                    font-family: 'FontAwesome';
+                    font-weight: 900; 
+                    content: "\f00d";
+                    color : #000;
+                    top: 46px;
+                    right: 30px;
+                    font-size: 30px;
+                }
+            }
+        }
         vertical-align: middle ;
         display: flex;
         justify-items: center;
         align-items: center;
         height: stretch;
+        @media screen and(max-width : 480px){
+                display: block;
+                background: #fff;
+                z-index: 99999999;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 80%;
+                visibility: hidden;
+                &.animated {
+                    visibility: visible
+                }
+                
+        }
         ul{
+         
             li {
                 display: inline-block;
                 position: relative;
                 margin: 0 10px;
+                padding: 5px 0;
                 &:first-child {
                     margin-left: 0;
                 }
@@ -28,6 +76,13 @@
                         color: #deb243;
                     }
                 }
+                @media screen and(max-width : 480px){
+                    display: block;
+                    top: 0;
+
+                    margin: 0 !important;
+                    text-align: center;
+                }
                 ul{
                     visibility: hidden;
                     background: #f7f7f7;
@@ -40,13 +95,21 @@
                     border-radius: 4px;
                     border : 1px solid #f3f1f1;
                     z-index: 99;
+                    @media screen and(max-width : 480px){
+                       position: relative;
+                       display: none;
+                       right: 0;
+                       left: 0;
+                       padding: 0 10px;
+                       margin: auto;
+                    }
                     li {
                         margin: 0;
                         display: block;
                         padding: 10px 7px;
                         width: 100%;
                         left: 0;
-                        
+
                         a {
                             font-family: $quicksand;
                         }
@@ -63,6 +126,11 @@
                         visibility: visible;
                         opacity: 1;
                         transition: all 0.5;
+                        @media screen and(max-width : 480px){
+                            display: block;
+                            margin: auto;
+                            width: 100%;
+                         }
                     }
                 }
                 &.header-menu-sub{
@@ -73,6 +141,10 @@
                         content: "\f0da";
                         position: absolute;
                         right: -15px;
+                        @media screen and(max-width : 480px){
+                            right: 10px;
+                            top: 5px;
+                         }
                     }
                     &:hover {
                         &:after {

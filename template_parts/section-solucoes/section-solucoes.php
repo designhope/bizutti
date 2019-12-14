@@ -52,5 +52,13 @@
                 </div>
             </div>
         </div>
+        <div class="row hidden-xs">
+                <div class="solucoes-home-controls ">
+                    <button class="slider-left">
+                    </button>
+                    <button class="slider-right">
+                    </button>
+                </div>
+            </div>
     </div>
 </section>
